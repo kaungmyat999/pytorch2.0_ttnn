@@ -12,4 +12,4 @@ RUN apt-get update && \
 
 # Initialize git lfs (must be done before any git operations)
 RUN git lfs install
-CMD ["/usr/sbin/sshd", "-D"]
+CMD ["pytest", "./tests/autogen_op/GPT-2/test_GPT-2_aten__softmax_default.py"]
