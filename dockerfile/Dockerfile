@@ -12,3 +12,4 @@ RUN apt-get update && \
 
 # Initialize git lfs (must be done before any git operations)
 RUN git lfs install
+CMD ["/usr/sbin/sshd", "-D"]
